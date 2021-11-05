@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>SUPERMARKET</h2>
+    Bułka 0,50zł<input type="checkbox" name="" id="bulka"> <br>
+    Mleko 2zł <input type="checkbox" name="" id="mleko"> <br>
+    Jabłko 2,50 zł<input type="checkbox" name="" id="jablko"> <br>
+    Cytryna 2 zł<input type="checkbox" name="" id="cytryna"> <br>
+    Ciastka 6 zł<input type="checkbox" name="" id="ciastka"> <br>
+    <input type="submit" value="Lista" onclick="oblicz();">
+
+    <p id="wynik"></p>
+    <p id="wynik2"></p>
+
+
+    
+    
+
+</body>
+</html>
+
+<script>
+    
+    function oblicz() {
+ 
+        var bul = document.getElementById("bulka");
+        var mle = document.getElementById("mleko");
+        var jab = document.getElementById("jablko"); 
+        var cytr = document.getElementById("cytryna");
+        var ciast = document.getElementById("ciastka");
+        var lista = "Twoja lista zakupów to: ";
+        var cena = 0;
+            if (bul.checked) {
+                lista += "bułka, ";
+                cena += 0.5;
+            }
+            if(mle.checked){
+                lista += "mleko, ";
+                cena += 2;
+            }
+            if(jab.checked){
+                lista += "jabłko, ";
+                cena += 2.5;
+            }
+            if(cytr.checked){
+                lista += "cytryna, ";
+                cena += 2;
+            } 
+            if(ciast.checked){
+                lista += "ciastka.";
+                cena += 6;
+            }
+            
+            wynik.innerHTML = lista;
+            wynik2.innerHTML = "Cena produktów to: " + parseFloat(cena) + " zł";
+        }
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    Cena <input type="number" name="" id="cena"> <br>
+    Ilość <input type="number" name="" id="ilosc"> <br>
+     Zniżka <input type="checkbox" name="" id="znizka"> <br>
+    <input type="submit" value="oblicz" onclick="oblicz();">
+
+    <p id="wynik"></p>
+    
+</body>
+</html>
+
+
+<script>
+    function oblicz(){
+        var cen = parseInt(cena.value);
+        var ilo = parseInt(ilosc.value);
+
+        var wyni = cen*ilo;
+        var x = document.getElementById('znizka');
+
+        if(cena.value == "" || ilosc.value == ""){
+            alert("błąd");
+        } else{
+            if(x.checked){
+            wyni *= 0.70;
+            wynik.innerHTML = wyni;
+        } else {
+            wynik.innerHTML = wyni;
+        }
+        }
+
+        
+    }
+</script>
