@@ -1,0 +1,53 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+}
+
+.gora{
+    width: 100%;
+    height: 80px;
+    background-color: #40271A;
+    font-family: Tahoma;
+    float: left;
+}
+
+#portal{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    
+}
+
+.lewo{
+    background-color: #DBB29C;
+    width: 40%;
+    height: 700px;
+    float: left;
+}
+
+.prawo{
+    background-color: #FFE3D4;
+    width: 60%;
+    height: 700px;
+    float: left;
+}
+
+.stopka{
+    background-color: #40271A;
+    color: white;
+    clear: both;
+    text-align: right;
+}
+
+#ksiazka{
+    margin: 30px;
+}
+
+tr, td, table{
+    border: 1px dashed brown;
+    text-align: center;
+    margin-inline: 10px;
+}
